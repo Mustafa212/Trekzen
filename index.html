@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TrekZen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
+
+</head>
+<body >
+<section style="height: 100vh;">
+
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark z-2 mt-3 position-fixed w-100">
+          <div class="container-fluid">
+            <a class="navbar-brand border-end" href="#">トレクゼン &emsp;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">History</a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Destinations
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Tokyo</a></li>
+                    <li><a class="dropdown-item" href="#">Saitama</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Yokohama</a></li>
+                    <li><a class="dropdown-item" href="#">Osaka</a></li>
+                    <li><a class="dropdown-item" href="#">Nagoya</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link disabled" aria-disabled="true">About</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control rounded-5 bg-transparent headersearch border border-2 border-light " type="search" placeholder="Search"  aria-label="Search">
+                <button class="btn ms-4 me-3 rounded-start-5 rounded-end-5 w-75 headerlogin" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">LOGIN</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+  </header>
+
+
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content bg-black" >
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">LOGIN</h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-light ms-4 me-4 mt-4">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text text-secondary mt-2">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-5">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-check form-switch ms-3 mb-3">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Remember me</label>
+            </div>  
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary shadow-none border-0" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary shadow-none border-0">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <main>
+     <div class="hero-img w-100 h-100">
+      <img src="images/japan.png " alt="" class="position-absolute top-0 img-fluid w-100 h-100">
+      <div class="hero-img-overlay w-100 h-100 z-1 position-absolute ">
+          <div class="hero-img-caption  z-1  position-absolute h-100 w-100  overflow-hidden d-flex justify-content-center align-items-center ">
+              <p>JAPAN</p>
+
+          </div>
+      </div>
+     </div>
+      
+  </main>
+
+</section>
+
+
+    <section class="placestogo">
+      <div class="container-fluid ">
+        <div class="row ms-lg-5 ps-lg-5 pt-lg-2">
+          <div class="col-12 col-lg-3 ms-lg-5">
+            <div id="carouselExampleCaptions" class="carousel slide mt-5 " >
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active ">
+                  <img src="/images/firstcourselitem.png" class="d-block w-100 rounded-3" alt="...">
+              
+                </div>
+                <div class="carousel-item" >
+                  <img src="images/anything.jpg" class="d-block w-100 rounded-3" alt="...">
+          
+                </div>
+                <div class="carousel-item">
+                  <img src="images/anything2.jpg" class="d-block w-100 rounded-3" alt="...">
+                  
+                </div>
+                <div class="carousel-item">
+                  <img src="images/anything3.jpg" class="d-block w-100 rounded-3" alt="...">
+                  
+                </div>
+                
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+          
+          </div>
+
+          <div class="col-12 col-lg-5 mt-5 ms-lg-5">
+            
+            <div class="accordion accordion-flush " id="accordionFlushExample">
+            <div class="accordion-item p-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Tokyo
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p class="d-none d-sm-block">Tokyo is the city that reflects the colors of Japan. In Japan, places to visit are endless, and exploring everything in one trip would always be impossible. But, the popular city of Tokyo still deserves the top spot in your itinerary, thanks to its anime culture and world-class attractions. And if the historical sites don’t impress you much, the city has also got a great culinary scene! This is undoubtedly amongst the best places to visit in Japan.</p>
+                  <br><br>
+                  <b style="color: rgb(235, 234, 234);">Best things to do:</b>
+                  <ul>
+                    <li>Spend an evening near the Tokyo Tower in Japan</li>
+                    <li>Shop in Odaiba</li>
+                    <li>Witness the grandeur of the Meiji Shrine</li>
+                  </ul>
+                  <br><br>
+                      </div>
+              </div>
+            </div>
+            <div class="accordion-item  p-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Mount Fouji
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  The paradise for adventure seekers! Renowned around the world for offering the most thrilling experience in Japan, Mt. Fuji is the ultimate place to visit and definitely one of the most romantic places in Japan. While the official climbing season begins from July and ends in September, you can witness the beauty from a distance throughout the year. It is one of the best places to visit in Japan for young adults. Needless to say, this place ought to be on your list!
+                  <br><br>
+                  <b style="color: rgb(235, 234, 234);">Best things to do:</b>
+                  <ul>
+                    <li>Go for skiing</li>
+                    <li>Visit the Arakurayama Sengen Park</li>
+                    <li>Enjoy the views of Mt. Fuji from the Subashiri 5th Station</li>
+                  </ul>
+                  <br><br>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item  p-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Asakusa
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Crowned as the cultural hub of Tokyo, Asakusa has a combination of things to do and multiple places to go to for different kinds of travellers. One of the good places to visit in Japan includes the Asahi Beer Hall which is like a gem for all party-goers who wish to try amazing booze in Japan. You can also try the Nakamise shopping block for a wild shopping spree in Japan.
+                  <br><br>
+                  <b style="color: rgb(235, 234, 234);">Best things to do:</b>
+                  <ul>
+                    <li>Experience blessed vibes at Sensō-ji</li>
+                    <li>Have a unique gaming time at Escape Game Nazobako Tokyo</li>
+                    <li>Visit Kappabashi-dori for the various topnotch restaurants</li>
+                  </ul>
+                  <br><br>
+              </div>
+              </div>
+            </div>
+            <div class="accordion-item  p-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                  Nikko
+                </button>
+              </h2>
+              <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body ">
+                  Called as one of the most important regions of Eastern Japan, Nikko is located in close proximity of Tochigi Prefecture and has various shrines to be visited by travellers. These include Kanmangafuchi Abyss and Toshogu Shrine. If you wish to try something different, pay a visit to Edo Wonderland which is a theme back takes you back to the ancient era. If you’re thinking, ‘places I should visit in Japan’, make sure you don’t miss out on this one!.
+                  <br><br>
+                  <b style="color: rgb(235, 234, 234);">Best things to do:</b>
+                  <ul>
+                    <li>Dip your toes in the hot springs of Kinugawa Onsen</li>
+                    <li>Walk down the history with Rinnō-ji museum</li>
+                    <li>Go hiking through Senjōgahara</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+
+
+    <section style="height:100vh;" class="d-none d-lg-block" >
+      <div class="container h-100">
+        
+        <div class="row row-cols-lg-2 justify-content-between h-75 align-content-center w-100">
+            <div class="mt-lg-5 position-relative w-25 ">
+              <img src="images/snoop.png" class="w-75 mt-lg-5 d-none d-lg-block " alt="" >
+              <div class="bubblechat position-absolute  w-75 h-75 text-light-emphasis text-center d-none d-lg-block">
+               <span class="text-white text-capitalize"> <br><br>What are you saying?</span>
+              </div>
+              <div class="form-floating position-absolute  w-75 h-50">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Translate to Japanese</label>
+              </div>
+            </div>
+            <div  class=" position-relative w-25"> 
+              <img src="images/charlie.png" class="w-75  d-none d-lg-block" alt="" >
+              <div class="bubblechatopp bubblechat position-absolute  w-75 h-75 text-light-emphasis text-center d-none d-lg-block">
+                <span class="text-white text-capitalize"> <br><br> 何を言っている?</span>
+              </div>
+             
+              <div class="form-floating position-absolute  w-75 h-50">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2 ">Translate to English</label>
+              </div>
+            </div>
+ 
+          </div>
+         
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <div class="m-0 p-0 somedestinations-first mb-5 mt-5">
+      <div class="w-100 h-100 m-0 p-0 somedestinations-overlay"></div>
+    </div>
+    <section  class="somedestinations align-content-center my-5 " >
+      <div class="continer mt-5 mb-5 position-relative ">
+        
+        <h2 class="position-absolute h">A</h2>
+        <div class="row justify-content-center ms-5  w-100 position-relative populardestinations-parent ">
+          <div class="populardestinations p1 p-0 m-0 position-absolute rounded">
+            <div class="populardestinations_caption text-capitalize text-secondary text-start ps-3 ">
+              
+                <h5 class="text-light my-5">Shinobazu Pond</h5>
+              
+                Tsuchiya Koitsu Sketches of Famous Places In Japan-Ueno Shinobazu Pond Japanese Woodblock Print Greeting Card
+              <br><br>
+
+            
+            
+            
+            </div>
+
+          </div>
+          <div class="populardestinations p2 p-0 m-0 position-absolute rounded">
+            <div class="populardestinations_caption text-capitalize text-secondary text-start ps-3 ">
+              
+              <h5 class="text-light my-5"> Horyuji</h5>
+            
+              Tsuchiya Koitsu Famous Places in Japan Nara Horyuji Temple Japanese Woodblock Print Baby One-Piece
+            <br><br>
+
+          
+          
+          
+          </div>
+
+          </div>
+          <div class="populardestinations p3 p-0 m-0 position-absolute rounded">
+            <div class="populardestinations_caption text-capitalize text-secondary text-start ps-3 ">
+              
+              <h5 class="text-light my-5">Nara</h5>
+            
+              Rain at Kofukuji Temple
+            <br><br>
+
+          
+          
+          
+          </div>
+
+          </div>
+          <div class="populardestinations p4 p-0 m-0 position-absolute rounded">
+
+            <div class="populardestinations_caption text-capitalize text-secondary text-start ps-3 ">
+              
+              <h5 class="text-light my-5">Asakusa</h5>
+            
+              Rain At Asakusa Kannon Temple, Tsuchiya Koitsu
+            <br><br>
+
+          
+          
+          
+          </div>
+
+          </div>
+          <div class="populardestinations p5 p-0 m-0 position-absolute rounded">
+            <div class="populardestinations_caption text-capitalize  text-start ps-3 ">
+              
+              <h5 class="text-light my-5">Utagahama</h5>
+            
+              Chuzenji Temple at Utagahama <br> Кавасэ Хасуй ©Estate of Kawase 
+              
+               Hasui <br>Los Angeles County Museum of Art
+            <br><br>
+
+          
+          
+          
+          </div>
+
+          </div>
+          
+        </div>
+        <h2 class="position-absolute hh d-none d-lg-block">T</h2>
+      </div>
+    </section>
+
+    <div class="m-0 p-0 somedestinations-second mb-5 mt-5">
+      <div class="w-100 h-100 m-0 p-0 somedestinations-overlay"></div>
+    </div>
+
+    <section style="height: 100vh;" class="talebook">
+      <div class="container h-100">
+        <div class="row col-12 h-100">
+          <div class="container h-75 text-center text-capitalize position-relative tale">
+            <span class="talehover d-none d-lg-block">wanna hear <br>a tale</span>
+            <div class="talehover_remover position-absolute  d-none d-lg-block "></div>
+            <div class="autowrite col-10  h-100 position-absolute ">
+              <div class="container h-100 text-center mt-0">
+                In a tranquil Japanese village surrounded by misty mountains, an elder named Hiroshi shared tales by the fire. One favorite was "Ryū no Sakura," the Dragon's Cherry Blossom.
+
+                Deep within a bamboo forest, a mystical dragon named Akira resided by a hidden pond. Akira's scales mirrored cherry blossom hues, and his eyes held ancient wisdom.
+                
+                The villagers believed Akira brought prosperity. Each spring, as cherry blossoms adorned the trees, Akira emerged, and his breath carried the sweet fragrance across the village.
+                
+                Legend spoke of Akira's magical presence making cherry blossoms bloom, celebrated in an annual festival. One year, young Sakura ventured into the forest with an origami dragon.
+                
+                Approaching Akira, Sakura offered the paper creation. To her amazement, it transformed into a real dragon. Akira and the new dragon soared, circling the village, and cherry blossoms bloomed in their wake.
+                
+                The tale of Sakura and the Dragon's Cherry Blossom 
+              
+              
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    
+    </section >
+    <section class="popularmeals " style="height:100vh;">
+      <div class="container h-100 mt-5  text-center">
+      <div class="mb-5">
+        <h2 style="font-size: 100px;">Food <span style="color: #FF3D00;">=</span> Culture</h2>
+      </div>
+        <div class="row row-cols-3 h-75 mt-5 ">
+          <div class="meal mt-5 align-items-center  position-relative">
+            <span class="mealname position-absolute" style="font-size: 200px;color: #FF3D00;  font-family: 'Road Rage', sans-serif; left: -70px;" >
+              Sus
+            </span>
+            <span class="mealname position-absolute" style="font-size: 200px;color: white;  font-family: 'Road Rage', sans-serif; ">hi</span>
+            <img src="images/halfsushi.png" class="w-50" alt="">
+          </div>
+          <div class="meal mt-5">
+            <span class="mealname position-absolute" style="font-size: 200px;color: #FF3D00;  font-family: 'Road Rage', sans-serif; left:700px;" >
+              Ram
+            </span>
+            <span class="mealname position-absolute" style="font-size: 200px;color: white;  font-family: 'Road Rage', sans-serif;left:930px ; ">en</span>
+            <img src="/images/ramen.png" class="w-75 ms-5" alt="">
+          </div>
+          <div class="meal mt-5">
+            <span class="mealname position-absolute" style="font-size: 200px;color: #FF3D00;  font-family: 'Road Rage', sans-serif; left:1150px;" >
+              Tempu
+            </span>
+            <span class="mealname position-absolute" style="font-size: 200px;color: white;  font-family: 'Road Rage', sans-serif;left:1470px ; ">ra</span>
+            <img src="/images/tampura.png" class="w-75" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="funfair " style="height: 150vh;">
+      <div class="container col-12  h-100 ">
+
+        <div class="playfair d-flex justify-content-end my-5 position-relative">
+          <img src="images/kimono.png" class="w-25 position-absolute" alt="">
+          <div class="playfair_description rounded-5 p-4">
+            <h2 class="mb-3">Kimono</h2>
+            <div class="undeline rounded-5 mb-4 "></div>
+            <span class="">Kimono is revered in Japan for preserving cultural heritage, reflecting elegance,<br> and symbolizing the wearer's connection to tradition, making it a cherished garment for special occasions and celebrations.</span>
+          </div>
+        </div>
+        <div class="playfair2 playfair d-flex justify-content-end position-relative my-5">
+          <img src="images/dragon2.png" class="w-25 position-absolute" alt="">
+          <div class="playfair_description rounded-5 p-4">
+            <h2 class="mb-3">Dragon</h2>
+            <div class="undeline rounded-5 mb-2"></div>
+            <span>
+              In Japan, the dragon is a mythical symbol revered for its auspicious qualities, representing strength, wisdom,<br> and protection, deeply ingrained in Japanese folklore and cultural beliefs.
+            </span>
+          </div>
+        </div>
+        <div class="playfair3 playfair d-flex justify-content-end position-relative my-5">
+          <img src="images/lantern.png" class="w-25 position-absolute" alt="">
+          <div class="playfair_description rounded-5 p-4">
+            <h2 class="mb-3">Light Festivals</h2>
+            <div class="undeline rounded-5 mb-2"></div>
+            <span>
+              Japan's light festivals captivate with a mesmerizing blend of traditional artistry and cutting-edge technology,<br> transforming landscapes into enchanting realms that celebrate cultural luminosity and create a magical atmosphere for locals and visitors alike.</span>
+          </div>
+        </div>
+       
+        
+
+      </div>
+    </section>
+    <footer style="height: 50vh" class=""> 
+      <div class="container-fluid footer h-100  d-flex align-items-center justify-content-center">
+        Copyright &copy;Reserved to nobody :)
+
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
